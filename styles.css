@@ -124,8 +124,9 @@ body {
 
 .home-sci {
     position: absolute;
-    bottom: 40px;
+    bottom: 10px;
     width: 170px;
+    max-width: 170px;
     display: flex;
     justify-content: space-between;
 }
@@ -175,10 +176,11 @@ body {
 }
 
 .images img {
-    height: 70%;
+    height: auto;
     position: absolute;
     left: 50%;
     bottom: 0;
+    max-width: 60%;
     transform: translate(-50%);
     transition: bottom 1s, left 1s;
 }
@@ -208,7 +210,7 @@ body {
 }
 
 .portfolio {
-    height: 140vh;
+    height: 150vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -228,6 +230,28 @@ body {
     margin: 40px 0;
     font-size: 20px;
     max-width: 1200px;
+}
+
+.portfolio h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.portfolio h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.portfolio h3 {
+    font-size: 22px;
+    font-weight: 300;
+    margin: 5px 0;
+}
+
+.portfolio p {
+    font-size: 16px;
 }
 
 tr {
@@ -252,34 +276,41 @@ td {
     border-color: #48b0ec;
     background-color: #144f71;
     color: #a6d0e6;
-}
-
-.contact {
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    padding: 0 10%;
-}
-
-.contact-content {
+    vertical-align: top;
     max-width: 800px;
 }
 
-.contact-content h1 {
+.contact {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
+}
+
+.contact h1 {
     font-size: 40px;
     font-weight: 700;
     line-height: 1.2;
-    margin: 20px 0;
+    margin-bottom: 5%;
+    text-align: center;
 }
 
-.contact-content h3 {
+.contact-sci {
+    position: absolute;
+    bottom: 60px;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-sci h3 {
     font-size: 20px;
     font-weight: 500;
     color: #3e5375;
 }
 
-.contact-content p {
+.contact-sci p {
     font-size: 16px;
     margin: 20px 0 40px;
 }
