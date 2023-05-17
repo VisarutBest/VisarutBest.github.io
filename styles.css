@@ -47,6 +47,49 @@ body {
     color: darkblue;
 }
 
+.toggle-btn {
+    color: #000;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 100px;
+    background: #b5b5b5;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.dropdown-menu a {
+    padding: 0.7rem;
+    display: flex;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 650px) {
+    .navbar a {
+        display: none;
+    }
+
+    .toggle-btn {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: block;
+    }
+}
+
 .home {
     height: 75vh;
     display: flex;
@@ -72,7 +115,7 @@ body {
 
 .home-content p {
     font-size: 16px;
-    margin: 20px 0 40px;
+    margin: 20px 0 30px;
 }
 
 .home-content .btn-box {
