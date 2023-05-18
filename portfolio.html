@@ -32,9 +32,18 @@
         </div>
     </header>
 
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn')
+        const toggleBtnIcon = document.querySelector('.toggle-btn i')
+        const dropDownMenu = document.querySelector('.dropdown-menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+        }
+    </script>
+
     <section class="portfolio">
         <h1 class="head">My Portfolio</h1>
-        <div style="overflow-x: auto;">
             <table class="content-table">
                 <tr>
                     <th><h1>Education</h1></th>
@@ -81,7 +90,6 @@
                     <p>- Motivated on student to interest in the faculty.</p></td>
                 </tr>
             </table>
-        </div>
     </section>
 </body>
 </html>
