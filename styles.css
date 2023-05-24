@@ -259,7 +259,6 @@ body {
 }
 
 .portfolio {
-    height: 150vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -268,7 +267,7 @@ body {
 }
 
 .portfolio h1.head {
-    font-size: 40px;
+    font-size: clamp(30px, 2.5vw, 40px);
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 3px;
@@ -276,31 +275,81 @@ body {
 
 .portfolio table.content-table {
     border-collapse: collapse;
-    margin: 40px 0;
-    font-size: 20px;
+    margin: 40px auto 0;
+    padding: 0 10%;
+    font-size: clamp(12px, 2.5vw, 20px);
+    width: 100%;
     max-width: 1200px;
 }
 
-.portfolio h1 {
-    font-size: 40px;
+.portfolio thead {
+    background-color: #0e374e;
+}
+
+.portfolio thead tr th {
+    font-size: clamp(22px, 2.5vw, 40px);
     font-weight: 700;
-    line-height: 1.2;
+    letter-spacing: 0.35px;
+    color: #93bfd5;
+    opacity: 1;
+    padding: 12px;
+    vertical-align: top;
+    border: 1px solid #48b0ec;
+}
+
+.portfolio tbody tr td {
+    padding: 15px;
+    height: auto;
+    text-align: left;
+    border: 1px solid #48b0ec;
+    background-color: #144f71;
+    color: #a6d0e6;
+    vertical-align: top;
+    max-width: 800px;
 }
 
 .portfolio h2 {
-    font-size: 28px;
+    font-size: clamp(17px, 2.5vw, 28px);
     font-weight: 600;
     margin: 10px 0;
 }
 
 .portfolio h3 {
-    font-size: 22px;
+    font-size: clamp(15px, 2.5vw, 22px);
     font-weight: 300;
     margin: 5px 0;
 }
 
 .portfolio p {
-    font-size: 16px;
+    font-size: clamp(12px, 2.5vw, 16px);
+}
+
+@media (max-width: 650px) {
+    .portfolio thead {
+        display: none;
+    }
+    .portfolio tbody, .portfolio tr, .portfolio td {
+        display: block;
+        width: 100%;
+    }
+    .portfolio tr {
+        margin-bottom: 15px;
+    }
+    .portfolio tbody tr td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+    .portfolio td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: 600;
+        font-size: clamp(23px, 2.5vw, 35px);
+        text-align: left;
+    }
 }
 
 tr {
