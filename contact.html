@@ -50,7 +50,7 @@
     <section class="contact">
          <h1 class="heading">Contact <span>Me</span></h1>
         
-        <form action="#">
+        <form name="submit-to-google-sheet">
             <div class="input-box">
                 <input type="text" placeholder="Full Name">
                 <input type="email" placeholder="Email Address">
@@ -60,8 +60,21 @@
                 <input type="text" placeholder="Email Subject">
             </div>
             <textarea name="" id="" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
+            <button type="submit" class="btn">Send Message</button>
         </form>
     </section>
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwWMVuwqYD4Gdy_0rvzOLczma7fmosG8AusgwMT7NwEYNh_Tpv_cO4WR5Sp_NtwnDm4/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 </html>
