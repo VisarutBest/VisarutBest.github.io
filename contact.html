@@ -62,6 +62,7 @@
             <textarea name="" id="" rows="10" placeholder="Your Message"></textarea>
             <button type="submit" class="btn">Send Message</button>
         </form>
+        <span id="msg"></span>
     </section>
     
     <script>
@@ -72,7 +73,9 @@
         form.addEventListener('submit', e => {
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+            })
             .catch(error => console.error('Error!', error.message))
         })
       </script>
