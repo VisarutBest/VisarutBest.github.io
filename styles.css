@@ -312,6 +312,14 @@ body {
     font-size: 20px;
 }
 
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
 .portfolio {
     display: flex;
     align-items: center;
