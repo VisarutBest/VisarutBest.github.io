@@ -108,20 +108,26 @@ body {
 }
 
 .home-content h1 {
-    font-size: 40px;
+    font-size: clamp(25px, 2.5vw, 40px);
     font-weight: 700;
     line-height: 1.2;
 }
 
-.home-content h3 {
-    font-size: 28px;
-    font-weight: 600;
-    color: #3e5375;
+.home-content .text-animate {
+    position: relative;
+    width: 32rem;
+}
+
+.home-content .text-animate h3 {
+    font-size: clamp(20px, 2.5vw, 28px);
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1px #3e5375;
 }
 
 .home-content p {
-    font-size: 16px;
-    margin: 20px 0 30px;
+    font-size: clamp(14px, 2.5vw, 16px);
+    margin: 10px 0 20px;
 }
 
 .home-content .btn-box {
@@ -141,7 +147,7 @@ body {
     background: #00abf0;
     border: 2px solid #00abf0;
     border-radius: 8px;
-    font-size: 19px;
+    font-size: clamp(14px, 2.5vw, 19px);
     color: #081b29;
     text-decoration: none;
     font-weight: 600;
@@ -185,12 +191,12 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: clamp(30px, 2.5vw, 40px);
+    height: clamp(30px, 2.5vw, 40px);
     background: transparent;
     border: 2px solid #000f84;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: clamp(15px, 2.5vw, 20px);
     color: #000f84;
     text-decoration: none;
     z-index: 1;
