@@ -123,6 +123,10 @@ body {
     font-weight: 700;
     color: transparent;
     -webkit-text-stroke: 1px #3e5375;
+    background-image: linear-gradient(#3e5375, #3e5375);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: 0 0;
 }
 
 .home-content p {
