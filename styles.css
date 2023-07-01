@@ -127,6 +127,8 @@ body {
     background-repeat: no-repeat;
     -webkit-background-clip: text;
     background-position: 0 0;
+    animation: homeBgText 6s linear infinite;
+    animation-delay: 2s;
 }
 
 .home-content p {
@@ -491,4 +493,17 @@ body {
     text-align: center;
     margin-top: -40px;
     display: block;
+}
+
+@keyframes homeBgText {
+    0%, 
+    10%, 
+    100% {
+        background-position: -33rem 0;
+    }
+
+    65%, 
+    85% {
+        background-position: 0 0;
+    }
 }
