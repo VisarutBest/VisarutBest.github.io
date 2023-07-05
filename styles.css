@@ -115,7 +115,7 @@ body {
 
 .home-content .text-animate {
     position: relative;
-    width: 32rem;
+    width: 26rem;
 }
 
 .home-content .text-animate h3 {
@@ -128,6 +128,19 @@ body {
     -webkit-background-clip: text;
     background-position: 0 0;
     animation: homeBgText 6s linear infinite;
+    animation-delay: 2s;
+}
+
+.home-content .text-animate h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-right: 2px solid #3e5375;
+    z-index: -1;
+    animation: homeCursorText 6s linear infinite;
     animation-delay: 2s;
 }
 
@@ -499,7 +512,7 @@ body {
     0%, 
     10%, 
     100% {
-        background-position: -33rem 0;
+        background-position: -26rem 0;
     }
 
     65%, 
