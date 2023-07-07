@@ -241,26 +241,13 @@ body {
     width: 100%;
 }
 
-.images {
-    width: 40%;
-    height: 80%;
-    position: absolute;
-    bottom: 0;
-    right: 40px;
-}
-
 .images img {
-    height: auto;
+    width: 25%;
+    border-radius: 50%;
+    border: .2rem solid #000f84;
     position: absolute;
-    left: 50%;
-    bottom: 0;
-    max-width: 60%;
-    transform: translate(-50%);
-    transition: bottom 1s, left 1s;
-}
-
-.images:hover .boy {
-    left: 45%;
+    right: 175px;
+    bottom: 20px;
 }
 
 .about {
