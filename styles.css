@@ -250,6 +250,20 @@ body {
     bottom: 20px;
 }
 
+.images .circle-spin {
+    position: absolute;
+    top: 60%;
+    right: -10%;
+    transform: translate(-64%, -40%) rotate(0);
+    width: 30%;
+    height: 70%;
+    border-radius: 50%;
+    border-top: .2rem solid #ccd1d9;
+    border-bottom: .2rem solid #ccd1d9;
+    border-left: .2rem solid #000f84;
+    border-right: .2rem solid #000f84;
+}
+
 .about {
     padding: 10px 10%;
 }
