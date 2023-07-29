@@ -394,6 +394,7 @@ body {
     padding: 0 40px;
     text-align: center;
     font-size: 14px;
+    transition: height 0.5s;
 }
 
 .layer h3 {
@@ -416,6 +417,10 @@ body {
 
 .work:hover img {
     transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
 }
 
 .contact h1 {
