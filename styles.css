@@ -423,6 +423,17 @@ body {
     height: 100%;
 }
 
+.btn1 {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #00abf0;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #000;
+}
+
 .contact h1 {
     font-size: 40px;
     font-weight: 700;
