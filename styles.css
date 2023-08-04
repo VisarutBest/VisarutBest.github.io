@@ -164,11 +164,11 @@ body {
     align-items: center;
     width: 150px;
     height: 100%;
-    background: #00abf0;
-    border: 2px solid #00abf0;
+    background: #0b006b;
+    border: 2px solid #0b006b;
     border-radius: 8px;
     font-size: clamp(14px, 2.5vw, 19px);
-    color: #081b29;
+    color: #9ed4fb;
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 1px;
@@ -178,7 +178,7 @@ body {
 }
 
 .btn-box a:hover {
-    color: #e1e5ed;
+    color: #0b006b;
 }
 
 .btn-box a::before {
@@ -188,7 +188,7 @@ body {
     left: 0;
     width: 0;
     height: 100%;
-    background: #35496b;
+    background: #73c6f6;
     z-index: -1;
     transition: .5s;
 }
@@ -214,17 +214,17 @@ body {
     width: clamp(30px, 2.5vw, 40px);
     height: clamp(30px, 2.5vw, 40px);
     background: transparent;
-    border: 2px solid #000f84;
+    border: 2px solid #0b006b;
     border-radius: 50%;
     font-size: clamp(15px, 2.5vw, 20px);
-    color: #000f84;
+    color: #0b006b;
     text-decoration: none;
     z-index: 1;
     overflow: hidden;
 }
 
 .home-sci a:hover {
-    color: #e1e5ed;
+    color: #bce7ff;
 }
 
 .home-sci a::before {
@@ -234,7 +234,7 @@ body {
     left: 0;
     width: 0;
     height: 100%;
-    background: #00abf0;
+    background: #0b006b;
     z-index: -1;
 }
 
@@ -259,8 +259,8 @@ body {
     width: 30%;
     height: 70%;
     border-radius: 50%;
-    border-top: .2rem solid #ccd1d9;
-    border-bottom: .2rem solid #ccd1d9;
+    border-top: .2rem solid #bce7ff;
+    border-bottom: .2rem solid #bce7ff;
     border-left: .2rem solid #000f84;
     border-right: .2rem solid #000f84;
 }
