@@ -116,7 +116,7 @@ body {
 
 .home-content .text-animate {
     position: relative;
-    width: 26rem;
+    width: 25.7rem;
 }
 
 .home-content .text-animate h3 {
@@ -240,6 +240,21 @@ body {
 
 .home-sci a:hover::before {
     width: 100%;
+}
+
+@media (max-width: 650px) {
+    .btn-box a {
+        width: 100px;
+        height: 40px;
+    }
+
+    .home-sci {
+        width: 120px;
+    }
+    
+    .home-content .text-animate {
+        width: 18.4rem;
+    }
 }
 
 .images img {
@@ -508,7 +523,7 @@ body {
     0%, 
     10%, 
     100% {
-        background-position: -26rem 0;
+        background-position: -25.7rem 0;
     }
 
     65%, 
@@ -535,4 +550,19 @@ body {
     81% {
         opacity: 0;
     } 
+}
+
+@media (max-width: 650px) {
+    @keyframes homeBgText {
+        0%, 
+        10%, 
+        100% {
+            background-position: -18.4rem 0;
+        }
+    
+        65%, 
+        85% {
+            background-position: 0 0;
+        }
+    }
 }
