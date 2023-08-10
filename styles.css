@@ -59,7 +59,7 @@ body {
     position: absolute;
     right: 2rem;
     top: 60px;
-    width: 100px;
+    width: 100%;
     height: 0;
     background: #73c6f6;
     border-radius: 10px;
@@ -114,6 +114,10 @@ body {
     color: #0b006b;
 }
 
+.text {
+    color: #006b6b;
+}
+
 .home-content .text-animate {
     position: relative;
     width: 25.7rem;
@@ -146,7 +150,7 @@ body {
 }
 
 .home-content p {
-    font-size: clamp(14px, 2.5vw, 16px);
+    font-size: clamp(14px, 2.5vw, 18px);
     margin: 10px 0 20px;
 }
 
@@ -281,7 +285,7 @@ body {
 }
 
 .about {
-    padding: 10px 10%;
+    padding: 0 10%;
 }
 
 .about-content {
@@ -310,6 +314,7 @@ body {
 .sub-title {
     font-size: 40px;
     font-weight: 700;
+    padding-bottom: 0.5rem;
 }
 
 .about-col-2 p {
@@ -564,5 +569,14 @@ body {
         85% {
             background-position: 0 0;
         }
+    }
+
+    .images img {
+        right: 75px;
+    }
+
+    .images .circle-spin {
+        width: 0;
+        height: 0;
     }
 }
