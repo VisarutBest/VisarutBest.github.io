@@ -317,13 +317,18 @@ body {
     padding-bottom: 0.5rem;
 }
 
+.about-col-2 .txt {
+    font-size: 16px;
+}
+
 .about-col-2 p {
     font-size: 16px;
 }
 
 .tab-titles {
     display: flex;
-    margin: 20px 0 40px;
+    margin: 20px 0 30px;
+    color: #014e06;
 }
 
 .tab-links {
@@ -338,7 +343,7 @@ body {
     content: '';
     width: 0;
     height: 3px;
-    background: #7c0303;
+    background: #028f1e;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -355,7 +360,7 @@ body {
 }
 
 .tab-contents ul li span {
-    color: #7c0303;
+    color: #014e06;
     font-size: 20px;
 }
 
