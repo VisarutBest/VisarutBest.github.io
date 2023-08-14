@@ -372,6 +372,15 @@ body {
     display: block;
 }
 
+@media (max-width: 650px) {
+    .about-content {
+        padding: 20px 0;
+    }
+    .about-col-1 {
+        flex-basis: 30%;
+    }
+}
+
 .portfolio {
     padding: 10px 10%;
 }
