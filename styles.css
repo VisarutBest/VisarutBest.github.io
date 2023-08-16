@@ -312,17 +312,13 @@ body {
 }
 
 .sub-title {
-    font-size: 40px;
+    font-size: clamp(25px, 2.5vw, 40px);
     font-weight: 700;
     padding-bottom: 0.5rem;
 }
 
 .about-col-2 .txt {
-    font-size: 16px;
-}
-
-.about-col-2 p {
-    font-size: 16px;
+    font-size: clamp(14px, 2.5vw, 16px);
 }
 
 .tab-titles {
@@ -333,7 +329,7 @@ body {
 
 .tab-links {
     margin-right: 50px;
-    font-size: 18px;
+    font-size: clamp(16px, 2.5vw, 18px);
     font-weight: 700;
     cursor: pointer;
     position: relative;
@@ -356,12 +352,14 @@ body {
 
 .tab-contents ul li {
     list-style: none;
+    font-size: clamp(14px, 2.5vw, 16px);
     margin: 10px 0;
 }
 
 .tab-contents ul li span {
     color: #014e06;
-    font-size: 20px;
+    font-size: clamp(16px, 2.5vw, 20px);
+    font-weight: 500;
 }
 
 .tab-contents {
