@@ -377,6 +377,15 @@ body {
     .about-col-1 {
         flex-basis: 30%;
     }
+    .sub-title {
+        padding-bottom: 0.25rem;
+    }
+    .tab-titles {
+        margin: 10px 0 20px;
+    }
+    .tab-contents ul li {
+        margin: 7.5px 0;
+    }
 }
 
 .portfolio {
