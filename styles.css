@@ -31,6 +31,9 @@ body {
     text-decoration: none;
     color: #0b006b;
     font-weight: 800;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
 }
 
 .navbar a {
@@ -599,5 +602,16 @@ body {
     .images .circle-spin {
         width: 0;
         height: 0;
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
     }
 }
