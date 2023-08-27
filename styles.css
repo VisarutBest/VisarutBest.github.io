@@ -37,12 +37,15 @@ body {
 }
 
 .navbar a {
+    display: inline-block;
     font-size: 18px;
     text-decoration: none;
     color: #0b006b;
     font-weight: 600;
     margin-left: 35px;
     transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
 }
 
 .navbar a:hover,
@@ -612,6 +615,17 @@ body {
     }
     100% {
         transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
         opacity: 1;
     }
 }
