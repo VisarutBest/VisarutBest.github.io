@@ -118,6 +118,9 @@ body {
     font-weight: 700;
     line-height: 1.3;
     color: #0b006b;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
 }
 
 .text {
@@ -622,6 +625,17 @@ body {
 @keyframes slideTop {
     0% {
         transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
         opacity: 0;
     }
     100% {
