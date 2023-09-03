@@ -194,6 +194,9 @@ body {
     z-index: 1;
     overflow: hidden;
     transition: .5s;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 1s;
 }
 
 .btn-box a:hover {
@@ -283,6 +286,9 @@ body {
     position: absolute;
     right: 175px;
     bottom: 20px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
 }
 
 .images .circle-spin {
