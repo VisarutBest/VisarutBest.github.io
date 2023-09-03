@@ -293,8 +293,8 @@ body {
 
 .images .circle-spin {
     position: absolute;
-    top: 60%;
-    right: -10%;
+    top: 30%;
+    right: -9.2%;
     transform: translate(-64%, -40%) rotate(0);
     width: 30%;
     height: 70%;
@@ -303,6 +303,9 @@ body {
     border-bottom: .2rem solid #bce7ff;
     border-left: .2rem solid #000f84;
     border-right: .2rem solid #000f84;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
 }
 
 .about {
