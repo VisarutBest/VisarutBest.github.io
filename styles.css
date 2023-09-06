@@ -243,6 +243,9 @@ body {
     text-decoration: none;
     z-index: 1;
     overflow: hidden;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
 }
 
 .home-sci a:hover {
