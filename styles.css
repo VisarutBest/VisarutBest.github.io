@@ -46,6 +46,7 @@ body {
     transition: .3s;
     opacity: 0;
     animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
 }
 
 .navbar a:hover,
@@ -332,6 +333,9 @@ body {
 .about-col-1 img {
     width: 80%;
     border-radius: 15px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
 }
 
 .about-col-2 {
@@ -342,10 +346,16 @@ body {
     font-size: clamp(25px, 2.5vw, 40px);
     font-weight: 700;
     padding-bottom: 0.5rem;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
 }
 
 .about-col-2 .txt {
     font-size: clamp(14px, 2.5vw, 16px);
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
 }
 
 .tab-titles {
