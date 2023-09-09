@@ -297,7 +297,7 @@ body {
 .images .circle-spin {
     position: absolute;
     top: 30%;
-    right: -9.2%;
+    right: 9.2%;
     transform: translate(-64%, -40%) rotate(0);
     width: 30%;
     height: 70%;
