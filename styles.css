@@ -391,6 +391,9 @@ body {
     list-style: none;
     font-size: clamp(14px, 2.5vw, 16px);
     margin: 10px 0;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
 }
 
 .tab-contents ul li span {
