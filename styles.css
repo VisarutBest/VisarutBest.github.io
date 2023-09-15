@@ -620,6 +620,13 @@ body {
     } 
 }
 
+@media (max-width: 900px) {
+    .images .circle-spin {
+        width: 0;
+        height: 0;
+    }
+}
+
 @media (max-width: 650px) {
     @keyframes homeBgText {
         0%, 
@@ -636,11 +643,6 @@ body {
 
     .images img {
         right: 75px;
-    }
-
-    .images .circle-spin {
-        width: 0;
-        height: 0;
     }
 }
 
