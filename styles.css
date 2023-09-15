@@ -438,6 +438,8 @@ body {
     line-height: 1.2;
     margin-bottom: 3px;
     text-align: center;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
 }
 
 .work-list {
