@@ -625,8 +625,7 @@ body {
 
 @media (max-width: 1300px) {
     .images .circle-spin {
-        width: 0;
-        height: 0;
+        display: none;
     }
 }
 
