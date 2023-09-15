@@ -623,9 +623,10 @@ body {
     } 
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1300px) {
     .images .circle-spin {
-        opacity: 0;
+        width: 0;
+        height: 0;
     }
 }
 
