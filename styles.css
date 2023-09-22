@@ -456,6 +456,9 @@ body {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
 }
 
 .work img {
@@ -519,6 +522,9 @@ body {
     border-radius: 6px;
     text-decoration: none;
     color: #000;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 1s;
 }
 
 .contact h1 {
