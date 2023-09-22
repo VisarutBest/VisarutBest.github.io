@@ -533,6 +533,13 @@ body {
     line-height: 10vh;
     margin-bottom: 1rem;
     text-align: center;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.text1 {
+    color: #369ea2;
 }
 
 .contact form {
@@ -594,6 +601,12 @@ body {
     text-align: center;
     margin-top: -40px;
     display: block;
+}
+
+@media (max-width: 650px) {
+    .contact h1 {
+        font-size: 30px;
+    }
 }
 
 @keyframes homeBgText {
