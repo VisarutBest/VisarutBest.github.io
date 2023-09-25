@@ -52,15 +52,13 @@
         
         <form name="submit-to-google-sheet">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+                <input type="text" required name="Name" placeholder="Full Name" style="--i:5">
+                <input type="email" name="Email" placeholder="Email Address" style="--i:5">
+                <input id="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="MobileNumber" placeholder="Mobile Number (ex. xxx-xxxx-xxxx)" style="--i:6">
+                <input type="text" required name="EmailSubject" placeholder="Email Subject" style="--i:6">
             </div>
-            <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
-            </div>
-            <textarea name="" id="" rows="10" placeholder="Your Message"></textarea>
-            <button type="submit" class="btn">Send Message</button>
+            <textarea name="Message" required rows="10" placeholder="Your Message" style="--i:7"></textarea>
+            <button type="submit" class="btn" style="--i:8">Send Message</button>
         </form>
         <span id="msg"></span>
     </section>
