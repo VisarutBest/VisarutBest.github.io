@@ -553,6 +553,9 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
 }
 
 .contact form .input-box input,
@@ -564,6 +567,9 @@ body {
     background: #cbebfd;
     border-radius: .8rem;
     margin: .7rem 0;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
 }
 
 .contact form .input-box input {
@@ -597,6 +603,9 @@ body {
     letter-spacing: .1rem;
     font-weight: 600;
     transition: .5s ease;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
 }
 
 .btn:hover {
