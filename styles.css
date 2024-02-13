@@ -452,6 +452,13 @@ body {
     margin-top: 50px;
 }
 
+.work-list1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
 .work {
     border-radius: 10px;
     position: relative;
