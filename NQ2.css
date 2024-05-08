@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    background-image: url("https://images.pexels.com/photos/1089306/pexels-photo-1089306.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    background-color: rgb(203, 244, 255);
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    top: 0;
+    margin-bottom: 20px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+    color: #0d097c;
+    font-family: cursive;
+}
+
+.navbar ul li a:hover {
+    color: #151db9;
+}
+
+.navbar ul li a.active {
+    color: #348e9e;
+}
+
+.navbar img {
+    margin: 10px;
+    width: 125px;
+}
+
+.flighthis {
+    margin: 20px;
+    padding: 10px;
+    background-color: azure;
+    border-radius: 10px;
+    color: #0d097c;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    text-align: center;
+
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 5px;
+        margin-top: -15px;
+
+        .date {
+            flex-basis: 50%;
+            font-size: 25px;
+            
+            .datetabs {
+                position: relative;
+                cursor: pointer;
+            }
+    
+            .datetabs::after {
+                content: '';
+                width: 0;
+                height: 4px;
+                background: #348e9e;
+                position: absolute;
+                left: 21vw;
+                bottom: -8px;
+                transition: 0.5s;
+            }
+
+            .datetabs.active-link {
+                color: #348e9e;
+                font-weight: 800;
+            }
+            
+            .datetabs.active-link::after {
+                width: 0%;
+            }
+        }
+    }
+}
+
+.details {
+    display: none;
+    margin: 20px;
+    padding: 10px;
+    background-color: azure;
+    border-radius: 10px;
+    color: #0d097c;
+    text-align: center;
+
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 18px;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+
+        .depart1 {
+            flex-basis: 50%;
+        }
+        .depart2 {
+            flex-basis: 50%;
+        }
+        .arrival1 {
+            flex-basis: 30%;
+        }
+        .arrival2 {
+            flex-basis: 30%;
+        }
+        .arrival3 {
+            flex-basis: 30%;
+        }
+    }
+}
+
+.details.active-tab {
+    display: block;
+}
